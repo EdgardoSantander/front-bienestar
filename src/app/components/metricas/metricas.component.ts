@@ -24,7 +24,7 @@ export interface Metrica{
 		frecuenciaCardiaca: number,
 		presionArterialSys: number,
 		presionArterialDia: number,
-		suenioCont: number|null,
+		suenioCont: number|0,
 		ejercicioCont: number,
 		ritmoCardiacaTotal: number
 }
@@ -54,7 +54,6 @@ export class MetricasComponent implements OnInit {
 
           {
           this.products = data
-          console.log('aqui lo volvemos a traer a la chingadera')
           }
 
         );

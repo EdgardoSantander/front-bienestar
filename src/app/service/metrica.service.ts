@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class MetricaService {
   private apiUrl = 'http://localhost:8080/bienestar-emocional/todos';
 
-  constructor(private http: HttpClient) { console.log('aqui llamamos esta madre')}
+  constructor(private http: HttpClient) { console.log('aqui si funciona')}
 
   obtenerMetricas(): Observable<Metrica[]> {
     return this.http.get<Metrica[]>(this.apiUrl);
